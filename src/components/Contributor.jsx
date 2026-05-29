@@ -134,7 +134,7 @@ export default function Contributor(props) {
                 console.log(allContributors)
 
                 const repoResponse = await fetch(
-                    'https://api.github.com/repos/Bitbox-Connect/Bitbox',
+                    'https://api.github.com/repos/Open-Code-Crafters/FitFlex',
                 );
                 const repoData = await repoResponse.json();
                 setRepoStats({
