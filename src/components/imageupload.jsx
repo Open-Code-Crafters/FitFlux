@@ -32,11 +32,7 @@ const CloudinaryUpload = ({ cloudName, uploadPreset, onUploadSuccess }) => {
         formData
       );
 
-      console.log("Upload Success:", response.data);
       toast.success("Image uploaded successfully!");
-
-      // Call callback function if provided
-      console.log(response.data.secure_url);
       onUploadSuccess && onUploadSuccess(response.data.secure_url);
     } catch (error) {
       console.error("Upload Error:", error);
